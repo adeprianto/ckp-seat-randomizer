@@ -125,7 +125,7 @@ export default function Home() {
             <main className="mt-8 mx-8 lg:mt-16 lg:mx-64">
                 <div className="flex items-center justify-center">
                     <button type="button" onClick={randomizeNames}
-                            className="inline-block mb-16 mx-auto rounded-lg bg-green-500 text-white p-4 cursor-pointer text-sm">
+                            className="inline-block mb-8 lg:mb-16 mx-auto rounded-lg bg-green-500 text-white p-4 cursor-pointer text-sm">
                         Randomize Seat
                     </button>
                 </div>
