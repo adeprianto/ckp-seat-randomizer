@@ -18,7 +18,7 @@ function groupPeople(people: CKP[]): CKP[][] {
     }
 
     // CHANGE: Group IDs 8 and 38 together
-    const specialIndividualIds = [8, 38, 36];
+    const specialIndividualIds = [8, 38];
 
     // CHANGE: Find both special individuals at once
     const specialIndividuals = people.filter(p => specialIndividualIds.includes(p.id));
@@ -32,7 +32,7 @@ function groupPeople(people: CKP[]): CKP[][] {
     const result: CKP[][] = Array.from({length: 12}, () => []);
     // const usedSlots = new Set<number>();
 
-    const specialSlots = [4, 6, 8];
+    const specialSlots = [4, 5, 6, 7, 8, 9];
 
     specialIndividuals.forEach((person) => {
         const chosenSeatRow = specialSlots[Math.floor(Math.random() * specialSlots.length)];
